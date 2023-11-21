@@ -145,8 +145,5 @@ if uploaded_file is not None:
                          columns=prediction_table.columns)
         ], ignore_index=True)
         
-    remaining_stock_days = np.random.randint(16, 51)
-    st.subheader(remaining_stock_days)
-
     # Display the prediction table
     st.table(prediction_table)
